@@ -1,0 +1,80 @@
+/*
+  Name: Nina Okubo
+  Date: October 30th 2021
+  Section: AC, TAs: Taylor Gotfrid and Ludvig Liljenberg
+
+  This is the styles.css page for my creative project 3 -
+  Zip Code Finder. It has a dull/gray/green theme (like an old map)
+*/
+
+html {
+  background-color: #eedd99;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+#enter-info {
+  flex-wrap: wrap;
+  align-items: flex-start;
+  padding: 50px;
+  flex-direction: column;
+}
+
+#zip-requirements {
+  color: red;
+}
+
+h1 {
+  font-size: 45px;
+  color: #dd9900;
+}
+
+h1, .enter-instruc {
+  text-decoration: underline;
+}
+
+#history, .enter-instruc, #error-report {
+  font-size: 20px;
+}
+
+#intro-text {
+  font-size: 22px;
+}
+
+#enter-zipcode {
+  width: 350px;
+  border: 5px solid #887744;
+  color: #515c5d;
+  margin-bottom: 10px;
+  padding: 20px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.found-info {
+  width: 500px;
+  flex-basis: 45%;
+  border: 5px solid #dd9900;
+  margin-top: 15px;
+}
+
+.enter-instruc, #error-report {
+  font-weight: bold;
+}
+
+#error-report {
+  border: 8px dashed #ef5151;
+  flex-basis: 60%;
+  margin: 30px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.hidden {
+  display: none;
+}
+
+button {
+  margin-top: 10px;
+}

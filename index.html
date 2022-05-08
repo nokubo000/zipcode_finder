@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+
+<!--
+  Name: Nina Okubo
+  Date: October 30th 2021
+  Section: AC, TAs: Taylor Gotfrid and Ludvig Liljenberg
+
+  This is my index.html page for Creative Project 3 - Zip Code Locator
+  This is a webpage where you can find the location to
+  it's corresponding zip code.
+-->
+
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Zip Code Locator</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="index.js"></script>
+    </head>
+  <body>
+    <h1>United States Zip Code Finder</h1>
+    <p id="history">Click
+      <a href="https://en.wikipedia.org/wiki/ZIP_Code">here</a>
+      to learn about the history of zip codes!</p>
+    <p id="intro-text">Have you ever wanted to know where a zip code belongs to?<br>
+      Well... try my zip code finder to find out!
+    </p>
+    <section id="enter-info">
+      <form id="enter-zipcode">
+        <p class="enter-instruc">Enter a U.S. zip code and discover where it leads to...</p>
+        <label for="zip-code">Zip code:</label>
+        <input type="text" id="zip-code" name="zip-code" size="5" minlength="5"
+        maxlength="5" required><br>
+        <button id="submit-zip-btn">Submit</button>
+        <p>Example: 98105</p><br>
+        <p id="zip-requirements">***Zip code must be 5 digits<br><strong>AND</strong><br>
+          inbetween 00501 and 99950***</p>
+        </form>
+      <article id="error-report" class="hidden">
+        <p>Invalid input!<br>
+          Please make sure you input is correct <strong>AND</strong> in the valid format,
+          then try again.</p>
+        </article>
+      </section>
+      <footer>Zip Code information found from the
+        <a href="http://www.zippopotam.us/">Zippopotam API</a>
+      </footer>
+    </body>
+  </html>
